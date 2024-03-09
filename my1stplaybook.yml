@@ -9,3 +9,13 @@
       service:
         name: apache2
         state: started
+
+    - name: install nginx
+      apt: 
+        name: nginx 
+        state: present
+        
+    - name: Start nginx service
+      service:
+        name: nginx
+        state: started
